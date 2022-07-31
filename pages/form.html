@@ -1,0 +1,81 @@
+<html>
+    <head>
+        <title>
+            Address Registration
+        </title>
+        <link rel="stylesheet" href="../css/form.css">
+    </head>
+    <body onload="insertNewRow()">
+        <div id="main-address-css">
+            <div id="homeAddres">
+                <h1 align="center">Home Address</h1>
+                <img src="home.png" width="50px" height="50px">
+                <form action="AddressReg.html" onsubmit="validAndSave()">
+                    <table align="center">
+                        <tr>
+                            <td>
+                                <b>Street</b>
+                            </td>
+                            <td>
+                                <input type="text" name="street" id="street" value="">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <b>LandMark</b>
+                            </td>
+                            <td>
+                                <input type="text" name="landmark" id="landmark" value="">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <b>City</b>
+                            </td>
+                            <td>
+                                <input type="text" name="city" id="city" value="">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <b>PinCode</b>
+                            </td>
+                            <td>
+                                <input type="text" name="pincode" id="pincode" value="">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+
+                            </td>
+                            <td>
+                                <input type="submit" name="submit" value="Submit">
+                            </td>
+                        </tr>
+                    </table>
+
+                </form>
+
+            </div>
+            <div>
+                <h1 align="center">List of Home Addresses</h1>
+                <table align="center" id="listOfHomeAddress">
+                    <tr>
+                        <th>
+                            Street
+                        </th>
+                        <th>
+                            LandMark
+                        </th>
+                        <th>
+                            City
+                        </th>
+                        <th>
+                            Pincode
+                        </th>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </body>
+</html>
